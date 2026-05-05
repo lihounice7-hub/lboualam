@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -83,6 +82,7 @@ nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,0.06);}
   background:var(--ink) !important;color:var(--white) !important;
   padding:8px 20px !important;border-radius:99px !important;
   font-weight:600 !important;font-size:13px !important;
+  margin-left: 10px;
 }
 .nav-cta:hover{background:var(--accent) !important;color:var(--white) !important;}
 
@@ -424,7 +424,7 @@ nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,0.06);}
 .contact-left .s-eyebrow::after{background:rgba(255,255,255,0.3);}
 .contact-left .s-eyebrow{color:rgba(255,255,255,0.5);}
 .contact-left .s-title{color:white;font-size:3rem;}
-.contact-left .s-desc{color:rgba(255,255,255,0.5);}
+.contact-left .s-desc{color:rgba(255,255,255,0.45);}
 .contact-links{display:flex;flex-direction:column;gap:12px;margin-top:2.5rem;}
 .c-link{
   display:flex;align-items:center;gap:14px;
@@ -519,6 +519,8 @@ footer strong{color:rgba(255,255,255,0.6);font-weight:600;}
   <div class="nav-links">
     <a href="#projets">Projets</a>
     <a href="#veille">Veille</a>
+    <!-- SECTION TABLEAU DE SYNTHESE AJOUTÉE ICI -->
+    <a href="Tableau de synthèse.pdf" target="_blank" style="color:var(--ink); font-weight:600;">Tableau de synthèse</a>
     <a href="#contact" class="nav-cta">Contact →</a>
   </div>
 </nav>
@@ -600,13 +602,13 @@ footer strong{color:rgba(255,255,255,0.6);font-weight:600;}
           </div>
         </div>
         <div class="projet-body">
-          <div class="projet-label" style="color:#2563EB;">Sécurité & données</div>
-          <h3>Migration et sécurisation des données utilisateurs</h3>
-          <p>Transfert et sécurisation des données de comptes utilisateurs lors d'un changement d'environnement. Mise en place de droits d'accès et vérification de l'intégrité des données migrées.</p>
+          <div class="projet-label" style="color:#2563EB;">Sécurité & données[cite: 2]</div>
+          <h3>Migration et sécurisation des données utilisateurs[cite: 2]</h3>
+          <p>Transfert et sécurisation des données de comptes utilisateurs lors d'un changement d'environnement. Mise en place de droits d'accès et vérification de l'intégrité des données migrées.[cite: 2]</p>
           <div class="projet-tags">
-            <span class="ptag" style="background:#EBF2FF;color:#2563EB;">Migration</span>
-            <span class="ptag" style="background:#EBF2FF;color:#2563EB;">Sécurité</span>
-            <span class="ptag" style="background:#EBF2FF;color:#2563EB;">Droits d'accès</span>
+            <span class="ptag" style="background:#EBF2FF;color:#2563EB;">Migration[cite: 2]</span>
+            <span class="ptag" style="background:#EBF2FF;color:#2563EB;">Sécurité[cite: 2]</span>
+            <span class="ptag" style="background:#EBF2FF;color:#2563EB;">Droits d'accès[cite: 2]</span>
           </div>
         </div>
       </div>
@@ -619,22 +621,26 @@ footer strong{color:rgba(255,255,255,0.6);font-weight:600;}
           </div>
         </div>
         <div class="projet-body">
-          <div class="projet-label" style="color:#7C3AED;">Systèmes</div>
-          <h3>Déploiement et mise à niveau de systèmes d'exploitation</h3>
-          <p>Installation et mise à jour de postes de travail sous Windows 11 et macOS. Configuration des environnements utilisateurs, installation des logiciels métier et vérification de la compatibilité.</p>
+          <div class="projet-label" style="color:#7C3AED;">Systèmes[cite: 2]</div>
+          <h3>Déploiement et mise à niveau de systèmes d'exploitation[cite: 2]</h3>
+          <p>Installation et mise à jour de postes de travail sous Windows 11 et macOS. Configuration des environnements utilisateurs, installation des logiciels métier et vérification de la compatibilité.[cite: 2]</p>
           <div class="projet-tags">
-            <span class="ptag" style="background:#FAF5FF;color:#7C3AED;">Windows 11</span>
-            <span class="ptag" style="background:#FAF5FF;color:#7C3AED;">macOS</span>
-            <span class="ptag" style="background:#FAF5FF;color:#7C3AED;">Déploiement</span>
+            <span class="ptag" style="background:#FAF5FF;color:#7C3AED;">Windows 11[cite: 2]</span>
+            <span class="ptag" style="background:#FAF5FF;color:#7C3AED;">macOS[cite: 2]</span>
+            <span class="ptag" style="background:#FAF5FF;color:#7C3AED;">Déploiement[cite: 2]</span>
           </div>
         </div>
       </div>
 
-      <div class="projet-card reveal reveal-delay-3" style="grid-column:1/-1;">
+      <div class="projet-card reveal reveal-delay-3" style="grid-column:1/-1; cursor:pointer;" onclick="window.open('Documentation générale.pdf','_blank')">
         <div class="projet-card-top" style="background:linear-gradient(135deg,#EBF2FF 0%,#EDE9FE 100%);min-height:120px;">
           <div class="projet-num-bg" style="color:rgba(37,99,235,0.06);">ITWAY</div>
           <div class="projet-icon-wrap" style="background:white;box-shadow:0 4px 20px rgba(37,99,235,0.2);">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z"/></svg>
+          </div>
+          <div style="position:absolute;left:1.5rem;top:50%;transform:translateY(-50%);background:white;border:1px solid rgba(37,99,235,0.2);border-radius:99px;padding:4px 12px;font-size:11px;font-weight:700;color:#2563EB;display:flex;align-items:center;gap:5px;">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Voir la doc
           </div>
           <div style="position:absolute;right:1.5rem;top:50%;transform:translateY(-50%);display:flex;gap:8px;z-index:1;">
             <span style="background:white;border:1px solid rgba(37,99,235,0.2);color:#2563EB;font-size:11px;font-weight:700;padding:4px 12px;border-radius:99px;">Marseille 🏢</span>
@@ -642,16 +648,16 @@ footer strong{color:rgba(255,255,255,0.6);font-weight:600;}
           </div>
         </div>
         <div class="projet-body">
-          <div class="projet-label" style="color:#2563EB;">Projet phare · Infrastructure SI</div>
-          <h3>Projet ITWAY — Infrastructure réseau multi-sites</h3>
-          <p>Conception et administration d'une infrastructure système et réseau complète, centralisée au siège de Marseille et interconnectée avec le site de Lille. Mise en place de l'ensemble des services réseau, de la sécurité et de l'administration centralisée pour les deux sites.</p>
+          <div class="projet-label" style="color:#2563EB;">Projet phare · Infrastructure SI[cite: 2]</div>
+          <h3>Projet ITWAY — Infrastructure réseau multi-sites[cite: 2]</h3>
+          <p>Conception et administration d'une infrastructure système et réseau complète, centralisée au siège de Marseille et interconnectée avec le site de Lille.[cite: 2] Mise en place de l'ensemble des services réseau, de la sécurité et de l'administration centralisée pour les deux sites.[cite: 2]</p>
           <div class="projet-tags">
-            <span class="ptag" style="background:#EBF2FF;color:#2563EB;">Infrastructure SI</span>
-            <span class="ptag" style="background:#EBF2FF;color:#2563EB;">Réseau multi-sites</span>
-            <span class="ptag" style="background:#EBF2FF;color:#2563EB;">Windows Server</span>
-            <span class="ptag" style="background:#EBF2FF;color:#2563EB;">Active Directory</span>
-            <span class="ptag" style="background:#EBF2FF;color:#2563EB;">VPN inter-sites</span>
-            <span class="ptag" style="background:#FAF5FF;color:#7C3AED;">Marseille ↔ Lille</span>
+            <span class="ptag" style="background:#EBF2FF;color:#2563EB;">Infrastructure SI[cite: 2]</span>
+            <span class="ptag" style="background:#EBF2FF;color:#2563EB;">Réseau multi-sites[cite: 2]</span>
+            <span class="ptag" style="background:#EBF2FF;color:#2563EB;">Windows Server[cite: 2]</span>
+            <span class="ptag" style="background:#EBF2FF;color:#2563EB;">Active Directory[cite: 2]</span>
+            <span class="ptag" style="background:#EBF2FF;color:#2563EB;">VPN inter-sites[cite: 2]</span>
+            <span class="ptag" style="background:#FAF5FF;color:#7C3AED;">Marseille ↔ Lille[cite: 2]</span>
           </div>
         </div>
       </div>
@@ -668,14 +674,14 @@ footer strong{color:rgba(255,255,255,0.6);font-weight:600;}
           </div>
         </div>
         <div class="projet-body">
-          <div class="projet-label" style="color:#059669;">Téléphonie mobile</div>
-          <h3>Restauration de système mobile et gestion des accès</h3>
-          <p>Remise en état de smartphones suite à des dysfonctionnements, réinitialisation des systèmes iOS et Android, et gestion des accès et comptes associés aux appareils mobiles.</p>
+          <div class="projet-label" style="color:#059669;">Téléphonie mobile[cite: 2]</div>
+          <h3>Restauration de système mobile et gestion des accès[cite: 2]</h3>
+          <p>Remise en état de smartphones suite à des dysfonctionnements, réinitialisation des systèmes iOS et Android, et gestion des accès et comptes associés aux appareils mobiles.[cite: 2]</p>
           <div class="projet-tags">
-            <span class="ptag" style="background:#ECFDF5;color:#059669;">iOS</span>
-            <span class="ptag" style="background:#ECFDF5;color:#059669;">Android</span>
-            <span class="ptag" style="background:#ECFDF5;color:#059669;">Restauration</span>
-            <span class="ptag" style="background:#ECFDF5;color:#059669;">Gestion des accès</span>
+            <span class="ptag" style="background:#ECFDF5;color:#059669;">iOS[cite: 2]</span>
+            <span class="ptag" style="background:#ECFDF5;color:#059669;">Android[cite: 2]</span>
+            <span class="ptag" style="background:#ECFDF5;color:#059669;">Restauration[cite: 2]</span>
+            <span class="ptag" style="background:#ECFDF5;color:#059669;">Gestion des accès[cite: 2]</span>
           </div>
         </div>
       </div>
@@ -688,13 +694,13 @@ footer strong{color:rgba(255,255,255,0.6);font-weight:600;}
           </div>
         </div>
         <div class="projet-body">
-          <div class="projet-label" style="color:#7C3AED;">Support client</div>
-          <h3>Ticketing — Gestion des tickets SAV</h3>
-          <p>Prise en charge des demandes clients, résolution des incidents et suivi des tickets via un logiciel interne de gestion SAV. Réponse aux problématiques et mise en place d'un suivi rigoureux.</p>
+          <div class="projet-label" style="color:#7C3AED;">Support client[cite: 2]</div>
+          <h3>Ticketing — Gestion des tickets SAV[cite: 2]</h3>
+          <p>Prise en charge des demandes clients, résolution des incidents et suivi des tickets via un logiciel interne de gestion SAV.[cite: 2] Réponse aux problématiques et mise en place d'un suivi rigoureux.[cite: 2]</p>
           <div class="projet-tags">
-            <span class="ptag" style="background:#FAF5FF;color:#7C3AED;">SAV</span>
-            <span class="ptag" style="background:#FAF5FF;color:#7C3AED;">Ticketing</span>
-            <span class="ptag" style="background:#FAF5FF;color:#7C3AED;">Relation client</span>
+            <span class="ptag" style="background:#FAF5FF;color:#7C3AED;">SAV[cite: 2]</span>
+            <span class="ptag" style="background:#FAF5FF;color:#7C3AED;">Ticketing[cite: 2]</span>
+            <span class="ptag" style="background:#FAF5FF;color:#7C3AED;">Relation client[cite: 2]</span>
           </div>
         </div>
       </div>
@@ -711,14 +717,14 @@ footer strong{color:rgba(255,255,255,0.6);font-weight:600;}
           </div>
         </div>
         <div class="projet-body">
-          <div class="projet-label" style="color:#D97706;">Portfolio BTS</div>
-          <h3>Portfolio — Ce site web</h3>
-          <p>Conception et développement de ce portfolio numérique pour présenter mes réalisations, ma veille technologique et mes compétences acquises en BTS SIO SISR.</p>
+          <div class="projet-label" style="color:#D97706;">Portfolio BTS[cite: 2]</div>
+          <h3>Portfolio — Ce site web[cite: 2]</h3>
+          <p>Conception et développement de ce portfolio numérique pour présenter mes réalisations, ma veille technologique et mes compétences acquises en BTS SIO SISR.[cite: 2]</p>
           <div class="projet-tags">
-            <span class="ptag" style="background:#FFFBEB;color:#D97706;">HTML / CSS</span>
-            <span class="ptag" style="background:#FFFBEB;color:#D97706;">JavaScript</span>
-            <span class="ptag" style="background:#FFFBEB;color:#D97706;">GitHub Pages</span>
-            <span class="ptag" style="background:#FFFBEB;color:#D97706;">lboualam.fr</span>
+            <span class="ptag" style="background:#FFFBEB;color:#D97706;">HTML / CSS[cite: 2]</span>
+            <span class="ptag" style="background:#FFFBEB;color:#D97706;">JavaScript[cite: 2]</span>
+            <span class="ptag" style="background:#FFFBEB;color:#D97706;">GitHub Pages[cite: 2]</span>
+            <span class="ptag" style="background:#FFFBEB;color:#D97706;">lboualam.fr[cite: 2]</span>
           </div>
         </div>
       </div>
@@ -901,9 +907,9 @@ footer strong{color:rgba(255,255,255,0.6);font-weight:600;}
       <div class="avatar-orb" style="width:64px;height:64px;margin-bottom:1.25rem;animation:none;">
         <span style="font-size:1.2rem;">BL</span>
       </div>
-      <div class="about-title">BOUALAM Lihounice</div>
-      <div class="about-role">BTS SIO — Option SISR · 2ème année · 2024–2025</div>
-      <p class="about-text">Passionnée par les infrastructures réseaux et la sécurité informatique. Rigoureuse et curieuse, je m'adapte rapidement aux nouvelles technologies et aux environnements professionnels variés.</p>
+      <div class="about-title">BOUALAM Lihounice[cite: 2]</div>
+      <div class="about-role">BTS SIO — Option SISR · 2ème année · 2024–2025[cite: 2]</div>
+      <p class="about-text">Passionnée par les infrastructures réseaux et la sécurité informatique. Rigoureuse et curieuse, je m'adapte rapidement aux nouvelles technologies et aux environnements professionnels variés.[cite: 2]</p>
       <div class="about-chips">
         <span class="a-chip">Réseaux</span>
         <span class="a-chip">Sécurité</span>
@@ -918,7 +924,7 @@ footer strong{color:rgba(255,255,255,0.6);font-weight:600;}
 </section>
 
 <footer>
-  <strong>BOUALAM Lihounice</strong> · Portfolio BTS SIO Option SISR · 2023–2025
+  <strong>BOUALAM Lihounice[cite: 2]</strong> · Portfolio BTS SIO Option SISR · 2023–2025[cite: 2]
 </footer>
 
 
