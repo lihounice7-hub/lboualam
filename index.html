@@ -53,7 +53,7 @@ section#hero.active-section {
   to { opacity: 1; transform: translateY(0); }
 }
 
-body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased;font-size:16px;}
 
 /* ─── SCROLLBAR ─── */
 ::-webkit-scrollbar{width:4px;}
@@ -146,14 +146,14 @@ nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,0.06);}
   display:flex;flex-wrap:wrap;gap:8px;margin-top:2rem;
 }
 .hero-tag{
-  font-size:12px;font-weight:500;padding:5px 13px;
+  font-size:13px;font-weight:500;padding:6px 14px;
   border-radius:99px;border:1px solid var(--border2);
   background:var(--white);color:var(--muted);
 }
 
 .hero-eyebrow{
   display:inline-flex;align-items:center;gap:8px;
-  font-size:12px;font-weight:600;letter-spacing:2px;
+  font-size:13px;font-weight:600;letter-spacing:2px;
   text-transform:uppercase;color:var(--accent);
   margin-bottom:1.5rem;
 }
@@ -161,7 +161,7 @@ nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,0.06);}
 .hero h1{
   font-family:'Syne',sans-serif;
   font-weight:800;
-  font-size:4.8rem;line-height:0.95;
+  font-size:5.8rem;line-height:0.95;
   color:var(--ink);letter-spacing:-3px;
   margin-bottom:1.5rem;
 }
@@ -171,7 +171,7 @@ nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,0.06);}
   letter-spacing:-3px;
 }
 .hero-desc{
-  font-size:15px;color:var(--muted);
+  font-size:17px;color:var(--muted);
   line-height:1.75;max-width:420px;
   margin-bottom:2.5rem;font-weight:400;
 }
@@ -180,7 +180,7 @@ nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,0.06);}
   display:inline-flex;align-items:center;gap:8px;
   padding:12px 24px;border-radius:12px;
   font-family:'Outfit',sans-serif;
-  font-size:14px;font-weight:600;
+  font-size:15px;font-weight:600;
   cursor:pointer;text-decoration:none;
   transition:all 0.25s;border:none;
   position:relative;overflow:hidden;
@@ -490,6 +490,130 @@ footer{
 }
 footer strong{color:rgba(255,255,255,0.6);font-weight:600;}
 
+/* ─── À PROPOS ─── */
+#apropos{background:var(--white);}
+.apropos-inner{max-width:1100px;margin:0 auto;padding:7rem 4rem;}
+.apropos-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:4rem;align-items:start;margin-top:3rem;}
+.apropos-left{}
+.apropos-id-card{
+  background:var(--bg);border:1px solid var(--border2);
+  border-radius:24px;padding:2.5rem;position:sticky;top:90px;
+}
+.apropos-avatar{
+  width:80px;height:80px;border-radius:50%;
+  background:linear-gradient(135deg,#1D4ED8,#7C3AED);
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:1.5rem;
+  box-shadow:0 6px 28px rgba(37,99,235,0.25);
+}
+.apropos-avatar span{
+  font-family:'Syne',sans-serif;font-weight:800;
+  font-size:1.6rem;color:white;
+}
+.apropos-name{
+  font-family:'Syne',sans-serif;font-weight:800;
+  font-size:1.3rem;color:var(--ink);letter-spacing:-0.5px;margin-bottom:4px;
+}
+.apropos-role{font-size:13px;color:var(--muted);margin-bottom:1.5rem;font-weight:500;}
+.apropos-infos{display:flex;flex-direction:column;gap:10px;}
+.a-info-row{
+  display:flex;align-items:center;gap:10px;
+  font-size:13px;color:var(--ink);
+}
+.a-info-icon{
+  width:32px;height:32px;border-radius:9px;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.a-info-icon svg{width:15px;height:15px;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.a-info-label{font-size:10px;text-transform:uppercase;letter-spacing:1px;font-weight:600;color:var(--muted);}
+.a-info-val{font-size:13px;font-weight:600;color:var(--ink);}
+.apropos-right{}
+.apropos-block{margin-bottom:2.5rem;}
+.apropos-block-title{
+  font-family:'Syne',sans-serif;font-weight:800;
+  font-size:1rem;color:var(--ink);margin-bottom:1.25rem;
+  display:flex;align-items:center;gap:10px;
+}
+.apropos-block-title::before{
+  content:'';width:4px;height:18px;border-radius:99px;
+  background:linear-gradient(180deg,var(--accent),var(--accent2));
+  flex-shrink:0;
+}
+.apropos-text{font-size:15px;color:var(--muted);line-height:1.8;}
+.apropos-text strong{color:var(--ink);font-weight:600;}
+.parcours-timeline{display:flex;flex-direction:column;gap:0;}
+.timeline-item{
+  display:grid;grid-template-columns:100px 1fr;
+  gap:0 1.5rem;position:relative;
+}
+.timeline-item:not(:last-child)::after{
+  content:'';position:absolute;
+  left:calc(100px + 0.75rem - 1px);
+  top:28px;bottom:-1px;width:2px;
+  background:linear-gradient(180deg,var(--border2),transparent);
+}
+.timeline-year{
+  font-family:'Syne',sans-serif;font-weight:800;
+  font-size:0.8rem;color:var(--muted2);letter-spacing:1px;
+  text-align:right;padding-top:4px;
+}
+.timeline-content{
+  border-left:2px solid var(--border);
+  padding:0 0 2rem 1.5rem;
+  position:relative;
+}
+.timeline-content::before{
+  content:'';position:absolute;
+  left:-5px;top:5px;
+  width:8px;height:8px;border-radius:50%;
+  background:var(--accent);
+  box-shadow:0 0 0 3px var(--white),0 0 0 5px rgba(37,99,235,0.2);
+}
+.timeline-content h4{
+  font-family:'Syne',sans-serif;font-weight:700;
+  font-size:0.95rem;color:var(--ink);margin-bottom:4px;
+}
+.timeline-content p{font-size:13.5px;color:var(--muted);line-height:1.65;}
+.timeline-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
+  padding:3px 10px;border-radius:99px;margin-bottom:8px;
+}
+.badge-bts{background:var(--accent-light);color:var(--accent);}
+.badge-bac{background:var(--green-light);color:var(--green);}
+.badge-alt{background:rgba(124,58,237,0.08);color:var(--accent2);}
+.center-store-card{
+  background:linear-gradient(135deg,rgba(37,99,235,0.04),rgba(124,58,237,0.04));
+  border:1px solid var(--border2);
+  border-radius:18px;padding:1.5rem;margin-top:0.5rem;
+}
+.cs-header{display:flex;align-items:center;gap:14px;margin-bottom:1rem;}
+.cs-logo{
+  width:48px;height:48px;border-radius:14px;
+  background:linear-gradient(135deg,#1D4ED8,#7C3AED);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.cs-logo span{font-family:'Syne',sans-serif;font-weight:800;font-size:0.8rem;color:white;letter-spacing:-0.5px;}
+.cs-name{font-family:'Syne',sans-serif;font-weight:800;font-size:1rem;color:var(--ink);margin-bottom:2px;}
+.cs-tag{font-size:12px;color:var(--muted);font-weight:500;}
+.cs-desc{font-size:13.5px;color:var(--muted);line-height:1.7;margin-bottom:1rem;}
+.cs-stats{display:flex;gap:1rem;flex-wrap:wrap;}
+.cs-stat{
+  background:var(--white);border:1px solid var(--border);
+  border-radius:12px;padding:0.75rem 1rem;flex:1;min-width:80px;text-align:center;
+}
+.cs-stat-num{
+  font-family:'Syne',sans-serif;font-weight:800;
+  font-size:1.5rem;color:var(--accent);line-height:1;margin-bottom:2px;
+}
+.cs-stat-label{font-size:11px;color:var(--muted);font-weight:500;}
+@media(max-width:900px){
+  .apropos-grid{grid-template-columns:1fr;}
+  .apropos-inner{padding:5rem 2rem;}
+  .apropos-id-card{position:static;}
+}
+
 /* ─── SCROLL REVEAL ─── */
 .reveal{opacity:0;transform:translateY(28px);transition:opacity 0.7s cubic-bezier(0.4,0,0.2,1),transform 0.7s cubic-bezier(0.4,0,0.2,1);}
 .reveal.up{opacity:1;transform:none;}
@@ -536,6 +660,7 @@ footer strong{color:rgba(255,255,255,0.6);font-weight:600;}
   </a>
   <div class="nav-links">
     <a href="#hero" class="js-nav-link active">Accueil</a>
+    <a href="#apropos" class="js-nav-link">À propos</a>
     <a href="#projets" class="js-nav-link">Projets</a>
     <a href="#veille" class="js-nav-link">Veille</a>
     <!-- Modification : Le nom du fichier est maintenant tableau_synthese.pdf -->
@@ -595,6 +720,140 @@ footer strong{color:rgba(255,255,255,0.6);font-weight:600;}
       <a href="#contact" class="btn btn-secondary js-nav-link">Me contacter</a>
     </div>
 
+  </div>
+</section>
+
+
+<!-- ══ À PROPOS ══ -->
+<section id="apropos">
+  <div class="apropos-inner">
+
+    <div class="section-header reveal">
+      <div class="s-eyebrow">Présentation</div>
+      <h2 class="s-title">À propos de moi</h2>
+      <p class="s-desc">Étudiante en BTS SIO, alternante en entreprise, passionnée par les infrastructures réseau et systèmes.</p>
+    </div>
+
+    <div class="apropos-grid">
+
+      <!-- Carte identité -->
+      <div class="apropos-left reveal">
+        <div class="apropos-id-card">
+          <div class="apropos-avatar"><span>LB</span></div>
+          <div class="apropos-name">Lihounice Boualam</div>
+          <div class="apropos-role">Étudiante BTS SIO · Option SISR</div>
+
+          <div class="apropos-infos">
+            <div class="a-info-row">
+              <div class="a-info-icon" style="background:var(--accent-light);">
+                <svg viewBox="0 0 24 24" stroke="var(--accent)"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <div>
+                <div class="a-info-label">École</div>
+                <div class="a-info-val">CCI de Vaucluse</div>
+              </div>
+            </div>
+            <div class="a-info-row">
+              <div class="a-info-icon" style="background:rgba(124,58,237,0.08);">
+                <svg viewBox="0 0 24 24" stroke="var(--accent2)"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-4 0v2M8 7V5a2 2 0 0 0-4 0v2"/></svg>
+              </div>
+              <div>
+                <div class="a-info-label">Formation</div>
+                <div class="a-info-val">BTS SIO · 2ème année</div>
+              </div>
+            </div>
+            <div class="a-info-row">
+              <div class="a-info-icon" style="background:var(--green-light);">
+                <svg viewBox="0 0 24 24" stroke="var(--green)"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+              </div>
+              <div>
+                <div class="a-info-label">Alternance</div>
+                <div class="a-info-val">Center Store</div>
+              </div>
+            </div>
+            <div class="a-info-row">
+              <div class="a-info-icon" style="background:var(--amber-light);">
+                <svg viewBox="0 0 24 24" stroke="var(--amber)"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="a-info-label">Région</div>
+                <div class="a-info-val">Vaucluse, France</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenu détaillé -->
+      <div class="apropos-right">
+
+        <!-- Qui suis-je -->
+        <div class="apropos-block reveal reveal-delay-1">
+          <div class="apropos-block-title">Qui suis-je ?</div>
+          <p class="apropos-text">
+            Je m'appelle <strong>Lihounice Boualam</strong>, étudiante en <strong>2ème année de BTS SIO option SISR</strong> au <strong>CCI de Vaucluse</strong>. Passionnée par les infrastructures informatiques, les réseaux et la maintenance des systèmes, je me forme au métier d'administratrice systèmes et réseaux à travers une formation en alternance.
+          </p>
+        </div>
+
+        <!-- Parcours -->
+        <div class="apropos-block reveal reveal-delay-2">
+          <div class="apropos-block-title">Mon parcours</div>
+          <div class="parcours-timeline">
+
+            <div class="timeline-item">
+              <div class="timeline-year">2024 — 2026</div>
+              <div class="timeline-content">
+                <div class="timeline-badge badge-bts">En cours</div>
+                <h4>BTS SIO · Option SISR</h4>
+                <p>CCI de Vaucluse — Formation en alternance spécialisée dans les <strong>Solutions d'Infrastructure, Systèmes et Réseaux</strong>. Administration, sécurisation et déploiement d'infrastructures IT.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2017 — 2020</div>
+              <div class="timeline-content">
+                <div class="timeline-badge badge-bac">Obtenu</div>
+                <h4>Bac STI2D · Option SIN</h4>
+                <p>Baccalauréat Sciences et Technologies de l'Industrie et du Développement Durable, option <strong>Systèmes d'Information et Numérique</strong>. Bases solides en électronique, programmation et réseaux.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Center Store -->
+        <div class="apropos-block reveal reveal-delay-3">
+          <div class="apropos-block-title">Mon entreprise d'alternance</div>
+          <div class="center-store-card">
+            <div class="cs-header">
+              <div class="cs-logo"><span>CS</span></div>
+              <div>
+                <div class="cs-name">Center Store</div>
+                <div class="cs-tag">Réparation d'appareils informatiques</div>
+              </div>
+            </div>
+            <p class="cs-desc">
+              Center Store est une entreprise spécialisée dans la <strong>réparation d'appareils informatiques</strong> : PC, tablettes et smartphones. En pleine expansion, l'enseigne est présente sur <strong>4 sites dans la région</strong> et continue de se développer pour répondre à une demande croissante.
+            </p>
+            <div class="cs-stats">
+              <div class="cs-stat">
+                <div class="cs-stat-num">4</div>
+                <div class="cs-stat-label">Sites régionaux</div>
+              </div>
+              <div class="cs-stat">
+                <div class="cs-stat-num" style="color:var(--accent2);">↗</div>
+                <div class="cs-stat-label">En expansion</div>
+              </div>
+              <div class="cs-stat">
+                <div class="cs-stat-num" style="color:var(--green);font-size:1rem;">PC·Tab·📱</div>
+                <div class="cs-stat-label">Appareils réparés</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 </section>
 
