@@ -268,7 +268,7 @@ nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,0.06);}
 
 /* ─── PROJETS ─── */
 #projets{background:var(--bg);}
-.projet-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.projet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
 .projet-card{
   background:var(--white);border-radius:20px;
   border:1px solid var(--border);
@@ -670,7 +670,7 @@ footer strong{color:rgba(255,255,255,0.6);font-weight:600;}
   .hero h1{font-size:3.2rem;}
   .section{padding:5rem 2rem;}
   .comp-grid{grid-template-columns:1fr 1fr;}
-  .projet-grid{grid-template-columns:1fr;}
+  .projet-grid{grid-template-columns:1fr 1fr;}
   .stage-layout{grid-template-columns:1fr;}
   .veille-grid{grid-template-columns:1fr 1fr;}
   .methode-steps{grid-template-columns:1fr 1fr;}
@@ -683,6 +683,7 @@ footer strong{color:rgba(255,255,255,0.6);font-weight:600;}
 @media(max-width:600px){
   .comp-grid{grid-template-columns:1fr;}
   .veille-grid{grid-template-columns:1fr;}
+  .projet-grid{grid-template-columns:1fr;}
   .hero h1{font-size:2.6rem;letter-spacing:-2px;}
   .s-title{font-size:2.1rem;}
 }
@@ -904,7 +905,7 @@ footer strong{color:rgba(255,255,255,0.6);font-weight:600;}
         </div>
       </div>
 
-      <div class="projet-card reveal reveal-delay-3" style="grid-column:1/-1; cursor:pointer;" onclick="window.open('Documentation générale.pdf','_blank')">
+      <div class="projet-card reveal reveal-delay-3" style="cursor:pointer;" onclick="window.open('Documentation générale.pdf','_blank')">
         <div class="projet-card-top" style="background:linear-gradient(135deg,#EBF2FF 0%,#EDE9FE 100%);min-height:120px;">
           <div class="projet-num-bg" style="color:rgba(37,99,235,0.06);">ITWAY</div>
           <div class="projet-icon-wrap" style="background:white;box-shadow:0 4px 20px rgba(37,99,235,0.2);">
@@ -981,7 +982,7 @@ footer strong{color:rgba(255,255,255,0.6);font-weight:600;}
         </div>
       </div>
 
-      <div class="projet-card reveal" style="grid-column:1/-1;max-width:500px;cursor:pointer;" onclick="window.open('Documentation_Portfolio.pdf','_blank')">
+      <div class="projet-card reveal" style="cursor:pointer;" onclick="window.open('Documentation_Portfolio.pdf','_blank')">
         <div class="projet-card-top" style="background:#FFFBEB;">
           <div class="projet-num-bg" style="color:rgba(217,119,6,0.07);">06</div>
           <div class="projet-icon-wrap" style="background:white;box-shadow:0 4px 16px rgba(217,119,6,0.15);">
